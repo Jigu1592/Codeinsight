@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Tool</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -14,14 +16,19 @@
         <section class="wrapper">
             <div class="navbar">
                 <nav id="nav">
+                    <p>CODEINSIGHT</p>
                     <ul id="sidemenu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Learn</a></li>
+                        <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                   
                     </ul>
                     <button class="buttonlg"> SIGNUP
                     </button>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                   
                 </nav>
                 
                 
@@ -40,5 +47,22 @@
     </div>
 
 </body>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu()
+    {
+        sidemenu.style.right = "-300px";
+    }
+    
+    
+    
+</script>
 
 </html>
