@@ -7,7 +7,7 @@
     <title>Developer Tool</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-   
+
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -23,15 +23,15 @@
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Learn</a></li>
                         <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
-                   
+
                     </ul>
                     <button class="buttonlg"> SIGNUP
                     </button>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                   
+
                 </nav>
-                
-                
+
+
             </div>
 
             <div id="stars"></div>
@@ -41,28 +41,43 @@
                 <span>CODEINSIGHT</span>
                 <br>
                 <span class="tag">A Platform for Showcasing UI/UX Coding Skills and Collaboration</span>
+                <a class="playstore-button" href="#">
+
+                    <p class="texts">
+                        <p class="text-1">GET IN TOUCH</p>
+
+                    </p>
+                </a>
+               
             </div>
+            
+
 
         </section>
+        
+        <canvas id="c"></canvas>
+
+        
+
+        <script src="app.js"></script>
+        <script src="three.js"></script>
     </div>
 
 </body>
 
 <script>
     var sidemenu = document.getElementById("sidemenu");
-    
-    function openmenu()
-    {
+
+    function openmenu() {
         sidemenu.style.right = "0";
     }
-    
-    function closemenu()
-    {
+
+    function closemenu() {
         sidemenu.style.right = "-300px";
     }
-    
-    
-    
+
+
+
 </script>
 
 </html>
