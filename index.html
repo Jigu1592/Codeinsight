@@ -12,10 +12,16 @@
 </head>
 
 <body>
+    <div class="load-row" id="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="main">
         <section class="wrapper">
             <div class="navbar">
-                <nav id="nav">
+                <nav id="nav">z
                     <p>CODEINSIGHT</p>
                     <ul id="sidemenu">
                         <li><a href="#">Home</a></li>
@@ -25,8 +31,8 @@
                         <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
 
                     </ul>
-                    <button class="buttonlg"> SIGNUP
-                    </button>
+                    <a class="buttonlg" href="signup.html"> SIGNUP
+                    </a>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
                 </nav>
@@ -49,6 +55,15 @@
                     </p>
                 </a>
                
+            </div>
+
+            <div class="elementbox">
+                <div class="card">
+                    <a href="#">
+
+                    </a>
+                </div>
+
             </div>
             
 
@@ -77,6 +92,16 @@
     }
 
 
+
+</script>
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function()
+    {
+        loader.style.display = "none";
+    })
 
 </script>
 

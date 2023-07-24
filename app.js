@@ -71,7 +71,7 @@ function main() {
         metalness: 0,
         map: THREE.ImageUtils.loadTexture('texture/earthmap1k.jpg'),
         bumpMap: THREE.ImageUtils.loadTexture('texture/earthbump.jpg'),
-        bumpScale: 0.5,
+        bumpScale: 1.3,
     });
 
     const earthmesh = new THREE.Mesh(earthgeometry, eatrhmaterial);
