@@ -123,4 +123,44 @@
     
   }
   
-      
+@media only screen and (max-width: 700px)
+{
+
+  .form{
+    width: 80%;
+    margin-left: -23%;
+    margin-top: 18%;
+  }
+
+  .flex-column > label
+  {
+    display: none;
+  }
+
+  ::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .flex-row > div > label
+  {
+    font-size: 13px;
+  }
+
+  .p
+  {
+    font-size: 13px;
+  }
+  
+} 
+@media (min-width: 700px) and (max-width: 1300px)
+{
+
+  .form
+  {
+    margin-left: -19%;
+  }
+
+}
+
+
+
